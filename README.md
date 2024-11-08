@@ -1,3 +1,72 @@
+
+## Instructions for Running
+
+### Backend
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/magalimou/country-info-app.git
+   cd country-info-app
+   ```
+
+2. Install the backend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root of the project and add the following environment variable:
+
+   ```
+   PORT=5000
+   ```
+
+4. Start the backend server:
+
+   ```bash
+   npm start
+   ```
+
+   The backend server will be running on `http://localhost:5000`.
+
+---
+
+### Frontend
+
+1. Navigate to the `frontend` directory:
+
+   ```bash
+   cd frontend
+   ```
+
+2. Install the frontend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the `frontend` folder and add the following environment variable:
+
+   ```
+   REACT_APP_BACKEND_URL=http://localhost:5000
+   ```
+
+4. Start the frontend server:
+
+   ```bash
+   npm start
+   ```
+
+   The frontend will be running on `http://localhost:3000`.
+
+---
+
+Once both servers are running, you can access the application in your browser at `http://localhost:3000`. The frontend will communicate with the backend through the specified URL in the `.env` file.
+
+---
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
